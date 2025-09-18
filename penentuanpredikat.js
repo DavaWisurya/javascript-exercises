@@ -18,8 +18,12 @@ do {
         console.log('Grade C')
      } else if (nilai >= 60 && nilai <= 74) {
         console.log('Grade D')
-     } else
-        console.log('Grade E')     
+     } else {
+        console.log('Grade E')
+     } 
+
+     diulang = prompt('diulang (y/n) ? ');
 }while(diulang == 'y') 
+    
 
     
