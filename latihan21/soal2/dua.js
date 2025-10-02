@@ -1,0 +1,1 @@
+console.log('Semangat Ujian 123,45')
