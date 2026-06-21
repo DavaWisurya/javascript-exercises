@@ -1,22 +1,10 @@
 const prompt = require('prompt-sync') ({ sigint: true })
 
-let diulang = 'y'
-do {
-    let jumlah = 0
-    let baris = ""
-
-    for (let i = 2; i <= 10; i+=2) {
-        jumlah = jumlah + i;
-
-        if ( i < 10) {
-            baris = baris + i + " + "
-        } else {
-            baris = baris + i + " = "
-        }
-    }
-
-    console.log(baris + jumlah)
-
-    diulang = prompt('Diulang (y/n) ? ')
-    
-} while (diulang == 'y')
+let genap = [2, 4, 6, 8, 10];
+let angka2 = 0;
+let angka = "";
+for (let i = 0; i < genap.length; i++) {
+  angka2 += genap[i];
+  angka += genap[i] + (i < genap.length - 1 ? " + " : "");
+}
+console.log(angka + " = " + angka2);

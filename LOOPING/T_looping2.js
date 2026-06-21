@@ -1,11 +1,8 @@
 const prompt = require('prompt-sync')
 ({sigint: true})
 
-for (let i = 0; i < 4; i++) {
+let i = 0;
+while (i < 5) {
     console.log("Cerdas");
+    i++;
 }
-
-let ulang;
-do {
-    ulang = prompt('Diulang (y/n) ? ');
-} while (ulang === 'y' || ulang === 'Y');

@@ -1,47 +1,30 @@
 const prompt = require('prompt-sync') ({sigint: true})
 
-const tinggi = 5;
+for (let i = 1; i <= 5; i++) {
+    let baris = "";
 
+    for (let j = 5; j > i; j--) {
+        baris += " ";
+    }
 
-let i = 1;
-do {
-    let baris = '';
-    let totalSpasi = tinggi - i;
-    
-    let s = 1;
-    while (s <= totalSpasi) {
-        baris += ' ';
-        s++;
+    for (let k = 1; k <= (2 * i - 1); k++) {
+        baris += "*";
     }
-    
-    let j = 1;
-    while (j <= i) {
-        baris += '* ';
-        j++;
-    }
-    
+
     console.log(baris);
-    i++;
-} while (i <= tinggi);
+}
+
+for (let i = 5 - 1; i >= 1; i--) {
+    let baris = "";
 
 
-i = tinggi - 1;
-do {
-    let baris = '';
-    let totalSpasi = tinggi - i;
-    
-    let s = 1;
-    while (s <= totalSpasi) {
-        baris += ' ';
-        s++;
+    for (let j = 5; j > i; j--) {
+        baris += " ";
     }
-    
-    let j = 1;
-    while (j <= i) {
-        baris += '* ';
-        j++;
+
+    for (let k = 1; k <= (2 * i - 1); k++) {
+        baris += "*";
     }
-    
+
     console.log(baris);
-    i--;
-} while (i >= 1);
+}

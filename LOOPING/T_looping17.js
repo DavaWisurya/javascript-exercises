@@ -1,6 +1,11 @@
 const prompt = require('prompt-sync') ({sigint: true})
 
-for (let i = 0; i < 5; i++) {
-    let huruf = String.fromCharCode(97 + i);
-    console.log((huruf + ' ').repeat(5).trim());
+let huruf = ["a", "b", "c", "d", "e"];
+
+for (let h = 0; h < huruf.length; h++) {
+    let baris = "";
+    for (let j = 0; j < 5; j++) {
+        baris += huruf[h] + (j < 4 ? " " : ""); 
+    }
+    console.log(baris);
 }
